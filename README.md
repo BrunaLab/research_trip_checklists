@@ -1,2 +1,3 @@
-# research_trip_checklists
-Templates for travel 
+## Checklists for Research Travel
+
+Editable templates for research trips
