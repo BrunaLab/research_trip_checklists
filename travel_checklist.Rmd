@@ -61,20 +61,21 @@ source
 
 ## Documents
 
+- [ ] passport valid for duration of trip
 - [ ] driver's license / international drivers license
+- [ ] printout of tickets & boarding passes
+- [ ] visa(s)
 - [ ] Immunization Records
 - [ ] copies of IACUC approval
 - [ ] copies of IRB approval
-- [ ] research permits 
-- [ ] collection permits 
-- [ ] export permits 
-- [ ] import permits
-- [ ] research and collection permits
-- [ ] passport valid for duration of trip
-- [ ] Prescriptions - Glasses
-- [ ] Prescriptions - Medications
-- [ ] printout of tickets & boarding passes
-- [ ] visa(s)
+- [ ] permits
+    - [ ] research permits 
+    - [ ] collection permits 
+    - [ ] export permits 
+    - [ ] import permits
+- [ ] Prescriptions
+    - [ ] Medications
+    - [ ] Glasses
 - [ ] Emergency Contact List
 - [ ] Letter from host institutions
 
