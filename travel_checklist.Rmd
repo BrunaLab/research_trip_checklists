@@ -7,11 +7,12 @@ header-includes:
 - \usepackage{fancyhdr} # modify header into left, center, right
 - \pagestyle{fancy} # cues the use of fancy headers
 - \fancyfoot{} # cues the use of fancy footer
-# month & year on header left
-- \fancyhead[L]{Travel and Fieldwork Checklist} 
-# name and page on header right
-- \fancyhead[R]{p. \thepage} 
-- \fancyfoot[R]{Last update `r format(Sys.time(), '%d %B %Y')`}
+- \renewcommand{\footrulewidth}{0.4pt}% default is 0pt
+# month & year on header right
+- \setlength{\headheight}{14.49998pt}
+- \fancyhead[R]{Last update `r format(Sys.time(), '%d %B %Y')`}
+- \fancyhead[L]{Fieldwork Checklists, p. \thepage} 
+- \fancyfoot[R]{Download or suggest improvments at the {\href{https://github.com/BrunaLab/research_trip_checklists.git}{Bruna Lab Github Repository}}\\}
 # - \usepackage{setspace}{singlespace} # manipulate line spacing 
 - \usepackage{parskip} # manipulate indents and spacing before/after paragra phs 
 - \usepackage{xcolor} # changes colors of text
@@ -45,6 +46,8 @@ knitr::opts_chunk$set(echo = TRUE)
 <!-- - [ ] Item -->
 <!-- - [x] Item -->
 
+source 
+
 # Travel 
 
 ## Prior to Departure
@@ -52,7 +55,9 @@ knitr::opts_chunk$set(echo = TRUE)
 - [ ] Inform bank & credit cards of travel dates
 - [ ] Update emergency contact information 
 - [ ] Provide trip details and contact info to emergency contacts
-
+- [ ] verify vaccinations required for the region
+- [ ] travel & emergency insurance 
+- [ ] Register with US State Dept. [STEP](https://step.state.gov/) (for US citizens) or equivalent for citizens of other countries 
 
 ## Documents
 
@@ -60,7 +65,9 @@ knitr::opts_chunk$set(echo = TRUE)
 - [ ] Immunization Records
 - [ ] copies of IACUC approval
 - [ ] copies of IRB approval
-- [ ] research and collection permits 
+- [ ] research permits 
+- [ ] collection permits 
+- [ ] export permits 
 - [ ] import permits
 - [ ] research and collection permits
 - [ ] passport valid for duration of trip
@@ -118,6 +125,11 @@ knitr::opts_chunk$set(echo = TRUE)
 - [ ] soap / body wash
 - [ ] sunscreen
 - [ ] hair ties
+- [ ] Antihistamines
+- [ ] anti-bacterial cream
+- [ ] anti-fungal cream
+- [ ] OTC treatment for UTIs
+- [ ] heat pad / muscle cream
 
 
 ## Clothing
@@ -128,7 +140,7 @@ knitr::opts_chunk$set(echo = TRUE)
 - [ ] pants
 - [ ] rain jacket or poncho
 - [ ] sandals / flip-flops
-- [ ] shirts - lightweight, long-sleeved for the field
+- [ ] shirts: long-sleeved for the field
 - [ ] shorts
 - [ ] socks
 - [ ] sunglasses
@@ -139,57 +151,67 @@ knitr::opts_chunk$set(echo = TRUE)
 - [ ] tennis shoes
 - [ ] towel
 - [ ] underwear
-- [ ] footwear for the field: hiking boots, rubber boots, etc.
-- [ ] hat (wide-brimmed or baseball cap)
+- [ ] footwear for the field (e.g, hiking boots, rubber boots)
+- [ ] hat
 
+## On Arrival
+
+- [ ] Purchase local cell phone / SIM card
+- [ ] Exchange cash for local currency
+- [ ] Registration with local authorities _(if required)_
 
 ## Travel with kids
 
-- [ ] passports
-- [ ] birth certificates
-- [ ] marriage certificates
-- [ ] authorization letter if traveling with only one parent
+- [ ] passport
+- [ ] birth certificate
+- [ ] marriage certificate
+- [ ] Required documentation if minor child is traveling with only 1 parent
 - [ ] immunization records
 
-
+\newpage
 # Fieldwork - General
 
 - [ ] backpack
-- [ ] batteries (AA, AAA)
+- [ ] AA batteries
+- [ ] AAA batteries
 - [ ] binoculars
+- [ ] spotting scope
 - [ ] books
 - [ ] camera
 - [ ] camera charger or batteries
 - [ ] checklist (for field work)
 - [ ] clipboard
 - [ ] compass 
+- [ ] machete
+- [ ] safety whistle
 - [ ] data sheets
 - [ ] field guides
+- [ ] duct tape
 - [ ] field notebooks
-- [ ] first aid kit
-- [ ] forceps
+- [ ] first aid kit (see [REI's list of recommended items](https://github.com/BrunaLab/research_trip_checklists/blob/8334720654ccf4ee78cd67d19379729dc52232b5/First-Aid_Kit_Checklist.pdf))
 - [ ] games / playing cards
 - [ ] GPS 
 - [ ] headlamp / flashlight
-- [ ] heat pad / muscle cream
 - [ ] Insect repellent (Deet, Permethrin for pre-treating clothes)
 - [ ] latex gloves
 - [ ] laundry bags
 - [ ] maps 
 - [ ] memory cards
 - [ ] mosquito net
-- [ ] pens / pencils
+- [ ] pencils
+- [ ] sharpies
+- [ ] flagging
 - [ ] permits 
 - [ ] pocket knife
 - [ ] portable hard drive 
 - [ ] rain cover for pack
 - [ ] safety whistle
-- [ ] snacks for field (granola, protein bars, sunflower seeds, almonds, etc)
-- [ ] treats for kids
+- [ ] snacks for field (e.g., granola, protein bars, sunflower seeds, almonds)
+- [ ] treats or gmaes to play with kids 
 - [ ] Ziploc bags
 
-
-# Fieldwork - Research with Human Subjects 
+\newpage
+# Fieldwork - Human Subjects 
 
 - [ ] checklist for interviews
 - [ ] IRB consent forms for interviews
@@ -197,9 +219,30 @@ knitr::opts_chunk$set(echo = TRUE)
 - [ ] compensation for participants (gift cards, etc.) if approved
 - [ ] digital audio recorder
 
+\newpage
+# Fieldwork - Botanical 
 
-# Fieldwork - Specific Project
+- [ ] pruners (Felco 4)
+- [ ] pole pruners
+- [ ] plant press
+- [ ] whirl packs
+- [ ] ethanol
 
-- [ ] Item 1
-- [ ] Item 2
-- [ ] Item 3
+\newpage
+# Fieldwork - Entomological
+
+- [ ] whirl packs
+- [ ] ethanol
+- [ ] pooter
+- [ ] Extraction Tools
+  - [ ] Winkler Kits
+  - [ ] Berlese Funnels & Lights
+- [ ] whirl packs
+- [ ] ethanol
+
+
+<!-- # Fieldwork - Specific Project -->
+
+<!-- - [ ] Item 1 -->
+<!-- - [ ] Item 2 -->
+<!-- - [ ] Item 3 -->
